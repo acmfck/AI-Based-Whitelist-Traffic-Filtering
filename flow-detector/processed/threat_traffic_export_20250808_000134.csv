@@ -1,0 +1,5 @@
+flow_id,timestamp,protocol,service,duration,src_bytes,dst_bytes,src_packets,dst_packets,anomaly_score,label,suspicion_reason,threat_category
+5,2025-08-08T00:01:34.531748,tcp,https,20.110935926437374,9258,1222,10,10,4.603164132489064,Normal,Statistical Anomaly,Suspicious
+7,2025-08-08T00:01:34.531748,tcp,-,40.40338587760925,6270,2247,22,22,3.0152466427580555,Normal,Statistical Anomaly,Suspicious
+27,2025-08-08T00:01:34.531748,tcp,https,20.23732304573059,1354,26559,9,11,6.650615239402163,Normal,Statistical Anomaly,Suspicious
+73,2025-08-08T00:01:34.531748,tcp,https,0.5627508163452148,6904,6446,9,13,3.258927352514185,Normal,Statistical Anomaly,Suspicious

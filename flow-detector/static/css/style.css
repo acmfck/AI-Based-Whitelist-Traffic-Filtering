@@ -1,0 +1,313 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* 渐变背景 */
+.gradient-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+/* 容器样式 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 卡片样式 */
+.card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.card-body {
+    padding: 40px;
+}
+
+/* 按钮样式 */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    margin: 10px 5px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(52,152,219,0.3);
+    text-decoration: none;
+    color: white;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+}
+
+.btn-warning {
+    background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%);
+}
+
+/* 网格布局 */
+.grid {
+    display: grid;
+    gap: 20px;
+}
+
+.grid-2 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-3 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.grid-4 {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* 特征卡片 */
+.feature-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #ecf0f1;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.feature-icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.feature-title {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.feature-desc {
+    color: #7f8c8d;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+/* 统计卡片 */
+.stat-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.stat-number {
+    font-size: 2em;
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    color: #7f8c8d;
+    font-size: 0.9em;
+}
+
+/* 表单样式 */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ecf0f1;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* 上传区域 */
+.upload-area {
+    border: 3px dashed #3498db;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.upload-area:hover {
+    border-color: #2980b9;
+    background: #f8f9fa;
+}
+
+.upload-area.dragover {
+    border-color: #27ae60;
+    background: #d5f4e6;
+}
+
+/* 进度条 */
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background: #ecf0f1;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #3498db, #2980b9);
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+/* 警告框 */
+.alert {
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.alert-success {
+    background: #d5f4e6;
+    border-left: 4px solid #27ae60;
+    color: #2d5a41;
+}
+
+.alert-error {
+    background: #ffebee;
+    border-left: 4px solid #e74c3c;
+    color: #c62828;
+}
+
+.alert-warning {
+    background: #fff3cd;
+    border-left: 4px solid #f39c12;
+    color: #856404;
+}
+
+.alert-info {
+    background: #e8f4fd;
+    border-left: 4px solid #3498db;
+    color: #1e3a8a;
+}
+
+/* 链接样式 */
+.link {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .card-body {
+        padding: 20px;
+    }
+    
+    .card-header {
+        padding: 20px;
+    }
+    
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+    
+    .feature-card {
+        padding: 20px;
+    }
+    
+    .upload-area {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+    }
+    
+    .feature-icon {
+        font-size: 2em;
+    }
+    
+    .stat-number {
+        font-size: 1.5em;
+    }
+}

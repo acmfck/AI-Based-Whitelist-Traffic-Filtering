@@ -1,0 +1,699 @@
+{
+  "basic_info": {
+    "total_flows": 259,
+    "features": 45,
+    "processing_time": 0.06085348129272461,
+    "timestamp": "2025-08-08T10:14:53.354492"
+  },
+  "enhanced_classification": {
+    "timestamp": "2025-08-08T10:14:53.342854",
+    "total_flows": 259,
+    "classification_summary": {
+      "normal_flows": 242,
+      "malicious_flows": 0,
+      "suspicious_flows": 17,
+      "normal_percentage": 93.43629343629344,
+      "malicious_percentage": 0.0,
+      "suspicious_percentage": 6.563706563706563
+    },
+    "normal_traffic_details": {
+      "http_traffic": {
+        "count": 94,
+        "percentage": 36.293436293436294,
+        "details": {
+          "avg_duration": 40.45279423226702,
+          "avg_bytes": 3671.968085106383,
+          "protocols": {
+            "tcp": 92,
+            "udp": 2
+          }
+        }
+      },
+      "dns_traffic": {
+        "count": 85,
+        "percentage": 32.818532818532816,
+        "details": {
+          "avg_duration": 1.4706290188957662,
+          "avg_bytes": 284.63529411764705,
+          "query_patterns": {
+            "dns": 85
+          }
+        }
+      },
+      "video_traffic": {
+        "count": 6,
+        "percentage": 2.3166023166023164,
+        "details": {
+          "avg_duration": 127.64099379380544,
+          "avg_bytes": 697758.0,
+          "high_bandwidth_flows": 2
+        }
+      },
+      "other_traffic": {
+        "count": 76,
+        "percentage": 29.343629343629345,
+        "details": {
+          "services": {
+            "-": 76
+          },
+          "protocols": {
+            "tcp": 70,
+            "udp": 5,
+            "other": 1
+          }
+        }
+      }
+    },
+    "malicious_traffic_details": {
+      "attack_types": {},
+      "severity_analysis": {},
+      "threat_patterns": {},
+      "export_ready_data": []
+    },
+    "suspicious_traffic_details": {
+      "suspicious_count": 17,
+      "suspicious_flows": [
+        {
+          "flow_id": 1,
+          "timestamp": "2025-08-08T10:14:53.341930",
+          "protocol": "tcp",
+          "service": "-",
+          "duration": 208.09601187705996,
+          "src_bytes": 3807270,
+          "dst_bytes": 153862,
+          "src_packets": 2655,
+          "dst_packets": 2489,
+          "anomaly_score": 16.058520957441992,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 2,
+          "timestamp": "2025-08-08T10:14:53.341930",
+          "protocol": "other",
+          "service": "-",
+          "duration": 206.9068148136139,
+          "src_bytes": 4680,
+          "dst_bytes": 4680,
+          "src_packets": 104,
+          "dst_packets": 104,
+          "anomaly_score": 3.11689585069431,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 5,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "tcp",
+          "service": "https",
+          "duration": 202.0530400276184,
+          "src_bytes": 4612,
+          "dst_bytes": 6229,
+          "src_packets": 22,
+          "dst_packets": 43,
+          "anomaly_score": 3.0305958055100124,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 28,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "udp",
+          "service": "dns",
+          "duration": 0.0049118995666503,
+          "src_bytes": 73,
+          "dst_bytes": 137,
+          "src_packets": 1,
+          "dst_packets": 1,
+          "anomaly_score": 3.000537277408335,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 84,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "udp",
+          "service": "dns",
+          "duration": 0.0048699378967285,
+          "src_bytes": 76,
+          "dst_bytes": 317,
+          "src_packets": 1,
+          "dst_packets": 1,
+          "anomaly_score": 3.0304219614728725,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 93,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "tcp",
+          "service": "-",
+          "duration": 36.09935998916626,
+          "src_bytes": 16022,
+          "dst_bytes": 40234,
+          "src_packets": 49,
+          "dst_packets": 56,
+          "anomaly_score": 3.3459457702519253,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 99,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "udp",
+          "service": "dns",
+          "duration": 0.0043859481811523,
+          "src_bytes": 84,
+          "dst_bytes": 132,
+          "src_packets": 1,
+          "dst_packets": 1,
+          "anomaly_score": 3.416449262994727,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 108,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "tcp",
+          "service": "-",
+          "duration": 60.37738490104675,
+          "src_bytes": 6646,
+          "dst_bytes": 69398,
+          "src_packets": 54,
+          "dst_packets": 58,
+          "anomaly_score": 5.989865385046588,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 129,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "udp",
+          "service": "dns",
+          "duration": 0.0,
+          "src_bytes": 78,
+          "dst_bytes": 0,
+          "src_packets": 1,
+          "dst_packets": 0,
+          "anomaly_score": 8.050238988016238,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 135,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "udp",
+          "service": "dns",
+          "duration": 0.0041520595550537,
+          "src_bytes": 80,
+          "dst_bytes": 149,
+          "src_packets": 1,
+          "dst_packets": 1,
+          "anomaly_score": 3.6352510371667743,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 140,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "udp",
+          "service": "dns",
+          "duration": 0.0041010379791259,
+          "src_bytes": 73,
+          "dst_bytes": 153,
+          "src_packets": 1,
+          "dst_packets": 1,
+          "anomaly_score": 3.686297459607139,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 167,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "udp",
+          "service": "dns",
+          "duration": 0.0043411254882812,
+          "src_bytes": 80,
+          "dst_bytes": 149,
+          "src_packets": 1,
+          "dst_packets": 1,
+          "anomaly_score": 3.456554484113535,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 173,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "udp",
+          "service": "dns",
+          "duration": 0.0040490627288818,
+          "src_bytes": 81,
+          "dst_bytes": 258,
+          "src_packets": 1,
+          "dst_packets": 1,
+          "anomaly_score": 3.7396207695586985,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 176,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "udp",
+          "service": "dns",
+          "duration": 0.0041069984436035,
+          "src_bytes": 84,
+          "dst_bytes": 100,
+          "src_packets": 1,
+          "dst_packets": 1,
+          "anomaly_score": 3.680268663706904,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 217,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "udp",
+          "service": "dns",
+          "duration": 0.0035851001739501,
+          "src_bytes": 84,
+          "dst_bytes": 132,
+          "src_packets": 1,
+          "dst_packets": 1,
+          "anomaly_score": 4.284118329770052,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 234,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "udp",
+          "service": "dns",
+          "duration": 0.004019021987915,
+          "src_bytes": 84,
+          "dst_bytes": 112,
+          "src_packets": 1,
+          "dst_packets": 1,
+          "anomaly_score": 3.7710696044325323,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 244,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "udp",
+          "service": "dns",
+          "duration": 0.0047008991241455,
+          "src_bytes": 73,
+          "dst_bytes": 153,
+          "src_packets": 1,
+          "dst_packets": 1,
+          "anomaly_score": 3.156213312821209,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        }
+      ],
+      "detection_method": "Statistical Z-Score Analysis",
+      "threshold_used": 3.0,
+      "features_analyzed": [
+        "dur",
+        "spkts",
+        "dpkts",
+        "sbytes",
+        "dbytes",
+        "rate"
+      ]
+    },
+    "export_data": {
+      "malicious_flows": [],
+      "suspicious_flows": [
+        {
+          "flow_id": 1,
+          "timestamp": "2025-08-08T10:14:53.341930",
+          "protocol": "tcp",
+          "service": "-",
+          "duration": 208.09601187705996,
+          "src_bytes": 3807270,
+          "dst_bytes": 153862,
+          "src_packets": 2655,
+          "dst_packets": 2489,
+          "anomaly_score": 16.058520957441992,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 2,
+          "timestamp": "2025-08-08T10:14:53.341930",
+          "protocol": "other",
+          "service": "-",
+          "duration": 206.9068148136139,
+          "src_bytes": 4680,
+          "dst_bytes": 4680,
+          "src_packets": 104,
+          "dst_packets": 104,
+          "anomaly_score": 3.11689585069431,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 5,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "tcp",
+          "service": "https",
+          "duration": 202.0530400276184,
+          "src_bytes": 4612,
+          "dst_bytes": 6229,
+          "src_packets": 22,
+          "dst_packets": 43,
+          "anomaly_score": 3.0305958055100124,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 28,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "udp",
+          "service": "dns",
+          "duration": 0.0049118995666503,
+          "src_bytes": 73,
+          "dst_bytes": 137,
+          "src_packets": 1,
+          "dst_packets": 1,
+          "anomaly_score": 3.000537277408335,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 84,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "udp",
+          "service": "dns",
+          "duration": 0.0048699378967285,
+          "src_bytes": 76,
+          "dst_bytes": 317,
+          "src_packets": 1,
+          "dst_packets": 1,
+          "anomaly_score": 3.0304219614728725,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 93,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "tcp",
+          "service": "-",
+          "duration": 36.09935998916626,
+          "src_bytes": 16022,
+          "dst_bytes": 40234,
+          "src_packets": 49,
+          "dst_packets": 56,
+          "anomaly_score": 3.3459457702519253,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 99,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "udp",
+          "service": "dns",
+          "duration": 0.0043859481811523,
+          "src_bytes": 84,
+          "dst_bytes": 132,
+          "src_packets": 1,
+          "dst_packets": 1,
+          "anomaly_score": 3.416449262994727,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 108,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "tcp",
+          "service": "-",
+          "duration": 60.37738490104675,
+          "src_bytes": 6646,
+          "dst_bytes": 69398,
+          "src_packets": 54,
+          "dst_packets": 58,
+          "anomaly_score": 5.989865385046588,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 129,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "udp",
+          "service": "dns",
+          "duration": 0.0,
+          "src_bytes": 78,
+          "dst_bytes": 0,
+          "src_packets": 1,
+          "dst_packets": 0,
+          "anomaly_score": 8.050238988016238,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 135,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "udp",
+          "service": "dns",
+          "duration": 0.0041520595550537,
+          "src_bytes": 80,
+          "dst_bytes": 149,
+          "src_packets": 1,
+          "dst_packets": 1,
+          "anomaly_score": 3.6352510371667743,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 140,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "udp",
+          "service": "dns",
+          "duration": 0.0041010379791259,
+          "src_bytes": 73,
+          "dst_bytes": 153,
+          "src_packets": 1,
+          "dst_packets": 1,
+          "anomaly_score": 3.686297459607139,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 167,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "udp",
+          "service": "dns",
+          "duration": 0.0043411254882812,
+          "src_bytes": 80,
+          "dst_bytes": 149,
+          "src_packets": 1,
+          "dst_packets": 1,
+          "anomaly_score": 3.456554484113535,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 173,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "udp",
+          "service": "dns",
+          "duration": 0.0040490627288818,
+          "src_bytes": 81,
+          "dst_bytes": 258,
+          "src_packets": 1,
+          "dst_packets": 1,
+          "anomaly_score": 3.7396207695586985,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 176,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "udp",
+          "service": "dns",
+          "duration": 0.0041069984436035,
+          "src_bytes": 84,
+          "dst_bytes": 100,
+          "src_packets": 1,
+          "dst_packets": 1,
+          "anomaly_score": 3.680268663706904,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 217,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "udp",
+          "service": "dns",
+          "duration": 0.0035851001739501,
+          "src_bytes": 84,
+          "dst_bytes": 132,
+          "src_packets": 1,
+          "dst_packets": 1,
+          "anomaly_score": 4.284118329770052,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 234,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "udp",
+          "service": "dns",
+          "duration": 0.004019021987915,
+          "src_bytes": 84,
+          "dst_bytes": 112,
+          "src_packets": 1,
+          "dst_packets": 1,
+          "anomaly_score": 3.7710696044325323,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        },
+        {
+          "flow_id": 244,
+          "timestamp": "2025-08-08T10:14:53.342854",
+          "protocol": "udp",
+          "service": "dns",
+          "duration": 0.0047008991241455,
+          "src_bytes": 73,
+          "dst_bytes": 153,
+          "src_packets": 1,
+          "dst_packets": 1,
+          "anomaly_score": 3.156213312821209,
+          "label": "Normal",
+          "suspicion_reason": "Statistical Anomaly",
+          "threat_category": "Suspicious"
+        }
+      ]
+    }
+  },
+  "protocol_analysis": {
+    "Proto_tcp": 166,
+    "Proto_udp": 92,
+    "Proto_other": 1
+  },
+  "service_analysis": {
+    "Web": "94",
+    "Mail": 0,
+    "File": 0,
+    "Remote": 0,
+    "DNS": "85",
+    "Unknown": "80",
+    "Other": "0"
+  },
+  "state_analysis": {
+    "CON (Connected - 正常连接)": 105,
+    "RST (Reset - 连接重置)": 85,
+    "FIN (Finished - 正常结束)": 49,
+    "INT (Interrupted - 连接中断)": 20
+  },
+  "pattern_analysis": {
+    "size_distribution": {
+      "Small (< 1KB)": 103,
+      "Medium (1KB-100KB)": 155,
+      "Large (100KB-10MB)": 1,
+      "Huge (> 10MB)": 0
+    },
+    "duration_distribution": {
+      "Very Short (< 1s)": 146,
+      "Short (1-10s)": 15,
+      "Medium (10-60s)": 37,
+      "Long (> 60s)": 61
+    },
+    "packet_distribution": {
+      "Few (< 10 pkts)": 105,
+      "Normal (10-100 pkts)": 148,
+      "Many (100-1000 pkts)": 5,
+      "Massive (> 1000 pkts)": 1
+    }
+  },
+  "attack_analysis": {
+    "label_distribution": {
+      "Normal": 0,
+      "Attack": 0,
+      "Attack_Percentage": 0.0
+    },
+    "attack_categories": {},
+    "suspicious_patterns": {
+      "port_scan_like": 0,
+      "ddos_like": 22,
+      "data_exfiltration_like": 0,
+      "brute_force_like": 0,
+      "ftp_anomaly": 0
+    }
+  },
+  "performance_stats": {
+    "duration_stats": {
+      "mean": 31.603192916708103,
+      "median": 0.2071928977966308,
+      "std": 56.3519082597243,
+      "max": 208.09601187705996,
+      "min": 0.0
+    },
+    "traffic_stats": {
+      "total_bytes": 5201346,
+      "avg_bytes_per_flow": 20082.41698841699,
+      "max_bytes": 3961132,
+      "min_bytes": 78
+    },
+    "packet_stats": {
+      "total_packets": 9978,
+      "avg_packets_per_flow": 38.52509652509652,
+      "max_packets": 5144,
+      "min_packets": 1
+    }
+  },
+  "detection_results": {
+    "total_samples": 259,
+    "features_count": 45,
+    "anomaly_detection": {
+      "method": "improved_z_score_analysis",
+      "status": "completed",
+      "anomalies_detected": 35,
+      "anomaly_percentage": 13.513513513513514,
+      "threshold": 3.0,
+      "avg_anomaly_score": 1.9322527824915623,
+      "max_anomaly_score": 16.058520957441992,
+      "valid_features_used": 21,
+      "total_features": 45
+    }
+  },
+  "export_info": {
+    "export_file": "processed\\threat_traffic_export_20250808_101453.csv",
+    "has_threats": true
+  }
+}

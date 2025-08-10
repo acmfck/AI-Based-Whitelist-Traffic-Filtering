@@ -1,0 +1,10 @@
+flow_id,timestamp,protocol,service,duration,src_bytes,dst_bytes,src_packets,dst_packets,anomaly_score,label,suspicion_reason,threat_category
+6,2025-08-07T22:44:49.867632,other,-,44.22943997383118,1035,1035,23,23,3.065620736011718,Normal,Statistical Anomaly,Suspicious
+7,2025-08-07T22:44:49.868640,tcp,http,37.79743719100952,7753,10490,25,19,3.420473664689471,Normal,Statistical Anomaly,Suspicious
+19,2025-08-07T22:44:49.868640,tcp,-,31.59941816329956,10137,3440,14,22,3.281940735359205,Normal,Statistical Anomaly,Suspicious
+24,2025-08-07T22:44:49.868640,tcp,https,30.38861298561096,5211,9664,17,22,3.0895729654177537,Normal,Statistical Anomaly,Suspicious
+25,2025-08-07T22:44:49.868640,tcp,-,39.420320987701416,16613,6943,26,42,5.729687406777519,Normal,Statistical Anomaly,Suspicious
+82,2025-08-07T22:44:49.869573,tcp,https,0.3887639045715332,11031,2829,8,11,3.6198477032789045,Normal,Statistical Anomaly,Suspicious
+90,2025-08-07T22:44:49.869573,udp,dns,0.0,72,0,1,0,6.080551468731922,Normal,Statistical Anomaly,Suspicious
+101,2025-08-07T22:44:49.869573,tcp,-,1.1249330043792725,5550,18109,24,26,6.244221986634994,Normal,Statistical Anomaly,Suspicious
+106,2025-08-07T22:44:49.869573,udp,dns,0.0,83,0,1,0,6.080551468731922,Normal,Statistical Anomaly,Suspicious

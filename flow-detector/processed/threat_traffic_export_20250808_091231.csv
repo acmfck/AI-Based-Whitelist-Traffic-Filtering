@@ -1,0 +1,12 @@
+flow_id,timestamp,protocol,service,duration,src_bytes,dst_bytes,src_packets,dst_packets,attack_type,label,threat_level,threat_category
+6,2025-08-08T09:12:31.770788,tcp,-,15.5,50000,2500,1000,50,DoS,Attack,high,Malicious
+7,2025-08-08T09:12:31.770788,tcp,-,25.8,100000,5000,2000,100,DoS,Attack,high,Malicious
+8,2025-08-08T09:12:31.771788,tcp,-,0.001,40,0,1,0,Reconnaissance,Attack,medium,Malicious
+9,2025-08-08T09:12:31.771788,tcp,-,0.001,40,0,1,0,Reconnaissance,Attack,medium,Malicious
+10,2025-08-08T09:12:31.771788,tcp,-,0.001,40,0,1,0,Reconnaissance,Attack,medium,Malicious
+11,2025-08-08T09:12:31.771788,tcp,-,0.001,40,0,1,0,Reconnaissance,Attack,medium,Malicious
+12,2025-08-08T09:12:31.771788,tcp,-,0.001,40,0,1,0,Reconnaissance,Attack,medium,Malicious
+13,2025-08-08T09:12:31.771788,tcp,ssh,5.2,25000,500,500,10,Brute Force,Attack,medium,Malicious
+14,2025-08-08T09:12:31.771788,tcp,ftp,8.7,40000,1000,800,20,Brute Force,Attack,medium,Malicious
+15,2025-08-08T09:12:31.771788,tcp,http,30.5,150000,7500,3000,150,DoS,Attack,high,Malicious
+20,2025-08-08T09:12:31.772788,tcp,telnet,0.2,150,50,3,1,Backdoor,Attack,high,Malicious

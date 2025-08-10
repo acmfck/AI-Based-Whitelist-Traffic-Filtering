@@ -1,0 +1,5 @@
+BATCH_SIZE = 256
+EPOCHS = 10
+LEARNING_RATE = 1e-3
+THRESHOLD = 0.01  # 用于白流量过滤
+USE_LSTM = False  # 可切换模型
